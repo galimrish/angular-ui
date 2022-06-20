@@ -1,0 +1,31 @@
+<h1 mat-dialog-title *ngIf="this.data.type.id != null">Edit</h1>
+<h1 mat-dialog-title *ngIf="this.data.type.id == null">Add</h1>
+<div mat-dialog-content>
+  <form novalidate [formGroup]="simpleForm">
+    <div class="add-essence-container">
+      <mat-form-field>
+        <input matInput placeholder="Name" formControlName="nameFC" maxlength="50"
+          [ngClass]="{ 'border-danger': simpleForm.get('nameFC')!.hasError('required') && simpleForm.get('nameFC')!.touched }"
+          required>
+        <mat-error *ngIf="simpleForm.get('nameFC')!.hasError('required') && simpleForm.get('nameFC')!.touched">
+          Name is required
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput digitOnly autocomplete="off" placeholder="Code" formControlName="codeFC" maxlength="50"
+          [ngClass]="{ 'border-danger': simpleForm.get('codeFC')!.hasError('required') && simpleForm.get('codeFC')!.touched }"
+          required>
+        <mat-error *ngIf="simpleForm.get('codeFC')!.hasError('required') && simpleForm.get('codeFC')!.touched">
+          Code is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelButton()">Cancel</button>
+  <button mat-button *ngIf="this.data.type.id != null" (click)="onSaveButton()"
+    [disabled]="simpleForm.invalid">Edit</button>
+  <button mat-button *ngIf="this.data.type.id == null" (click)="onSaveButton()"
+    [disabled]="simpleForm.invalid">Add</button>
+</div>

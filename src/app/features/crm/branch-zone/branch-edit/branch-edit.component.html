@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>{{this.data.type.id ? 'Edit' : 'Add'}}</h1>
+<div mat-dialog-content>
+  <form novalidate [formGroup]="branchFG">
+    <div class="form-group row">
+      <label class="col-form-label col-lg-3 text-right text-nowrap"
+        [ngClass]="{ 'text-danger': branchFG.get('nameFC')!.hasError('required') && branchFG.get('nameFC')!.touched }"
+        for="name">
+        <span matTooltip="Name is required">Branch name<span class="text-danger">&nbsp;*</span></span>
+      </label>
+      <div class="col-lg-7">
+        <input type="text"
+          [ngClass]="{ 'border-danger': branchFG.get('nameFC')!.hasError('required') && branchFG.get('nameFC')!.touched }"
+          class="form-control" name="name" maxlength="100" formControlName="nameFC">
+      </div>
+    </div>
+    <div class="form-group row">
+      <app-form-address [address]="address" [formDisabled]="false"
+        (changeFormAddress)='changeFormAddress($event)'>
+      </app-form-address>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelButton()">Cancel</button>
+  <button mat-button (click)="onSaveButton()" [disabled]="branchFG.invalid">
+    {{this.data.type.id ? 'Edit' : 'Add'}}
+  </button>
+</div>

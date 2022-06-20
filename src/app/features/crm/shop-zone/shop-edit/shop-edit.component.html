@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>{{this.data.type.id ? 'Edit' : 'Add'}}</h1>
+<div mat-dialog-content>
+  <form novalidate [formGroup]="shopFG">
+    <div class="add-essence-container">
+      <mat-form-field>
+        <input matInput placeholder="Name" formControlName="name" maxlength="50"
+          [ngClass]="{ 'border-danger': shopFG.get('name')!.hasError('required') && shopFG.get('name')!.touched }"
+          required>
+        <mat-error *ngIf="shopFG.get('name')!.hasError('required') && shopFG.get('name')!.touched">
+          Name is required
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Shop category" formControlName="shopCategory" maxlength="50"
+          [ngClass]="{ 'border-danger': shopFG.get('shopCategory')!.hasError('required') && shopFG.get('shopCategory')!.touched }"
+          required>
+        <mat-error *ngIf="shopFG.get('shopCategory')!.hasError('required') && shopFG.get('shopCategory')!.touched">
+          Shop category is required
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Merchandise" formControlName="merchandise" maxlength="50"
+          [ngClass]="{ 'border-danger': shopFG.get('merchandise')!.hasError('required') && shopFG.get('merchandise')!.touched }"
+          required>
+        <mat-error *ngIf="shopFG.get('merchandise')!.hasError('required') && shopFG.get('merchandise')!.touched">
+          Merchandise is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelButton()">Cancel</button>
+  <button mat-button (click)="onSaveButton()" [disabled]="shopFG.invalid">
+    {{this.data.type.id ? 'Edit' : 'Add'}}
+  </button>
+</div>
