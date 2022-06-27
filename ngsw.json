@@ -1,0 +1,87 @@
+{
+  "configVersion": 1,
+  "timestamp": 1656324471012,
+  "index": "C:/Program Files/Git/angular-ui/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/angular-ui/224.86f0e1f54fd5e18f.js",
+        "C:/Program Files/Git/angular-ui/57.d5b78f155314357a.js",
+        "C:/Program Files/Git/angular-ui/931.46eb0b866c0abb94.js",
+        "C:/Program Files/Git/angular-ui/favicon.ico",
+        "C:/Program Files/Git/angular-ui/index.html",
+        "C:/Program Files/Git/angular-ui/main.049ef210f4635384.js",
+        "C:/Program Files/Git/angular-ui/manifest.webmanifest",
+        "C:/Program Files/Git/angular-ui/polyfills.fc8b05a038bb1b18.js",
+        "C:/Program Files/Git/angular-ui/runtime.27e6b7ca63c4af00.js",
+        "C:/Program Files/Git/angular-ui/styles.982421a0bfee9e0b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-128x128.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-144x144.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-152x152.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-192x192.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-384x384.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-512x512.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-72x72.png",
+        "C:/Program Files/Git/angular-ui/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "C:/Program Files/Git/angular-ui/224.86f0e1f54fd5e18f.js": "5a124af6e07964899be922df1bb977f0112a7437",
+    "C:/Program Files/Git/angular-ui/57.d5b78f155314357a.js": "0eb487ed388f81ae5c1c7564dcdbcbd77168b92c",
+    "C:/Program Files/Git/angular-ui/931.46eb0b866c0abb94.js": "ddaf16d57d2509bca0158e8a019e5132476a0bbc",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "C:/Program Files/Git/angular-ui/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "C:/Program Files/Git/angular-ui/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "C:/Program Files/Git/angular-ui/index.html": "2855ea3406c94149f9c78b8823734d692078ff4c",
+    "C:/Program Files/Git/angular-ui/main.049ef210f4635384.js": "8fdaef9d6013f3f106c66138dc36b2e54ea3ad22",
+    "C:/Program Files/Git/angular-ui/manifest.webmanifest": "729873308971a061d9dd09ce4af0d914b106c780",
+    "C:/Program Files/Git/angular-ui/polyfills.fc8b05a038bb1b18.js": "d503e183e41dcdf7dff6cb1c799d1b2130184679",
+    "C:/Program Files/Git/angular-ui/runtime.27e6b7ca63c4af00.js": "54f62bb8eabfc4f502184d5e8065e3d794bb7dfe",
+    "C:/Program Files/Git/angular-ui/styles.982421a0bfee9e0b.css": "616e36c55e7aadd66a9eb93542bc7dc3d939f8fc"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
