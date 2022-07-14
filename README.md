@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
+You can visit [Github Pages](https://galimrish.github.io/angular-ui) of this app.
+
+This is an Angular PWA application, representing table data with CRUD operations.
+Using NgRx, Angular Material and Bootstrap for a frontend part.
+
+Also, there is a simple [NodeJs Api Server](https://github.com/galimrish/node-rest-api) that is deployed on Heroku.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
