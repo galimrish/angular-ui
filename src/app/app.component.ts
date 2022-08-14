@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LoadingBarService } from '@ngx-loading-bar/core';
+import { BranchService } from './shared/services/branch.service';
+import { finalize, take, tap } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +10,15 @@ import { LoadingBarService } from '@ngx-loading-bar/core';
 })
 export class AppComponent {
   title = 'angular-ui';
-  
+
   constructor(
-    public loader: LoadingBarService
-  ) { }
+    public loader: LoadingBarService,
+    private branchSrv: BranchService,
+  ) {
+    this.warmUp();
+  }
+
+  warmUp(): void {
+    this.branchSrv.getList().pipe(take(1)).subscribe();
+  }
 }

@@ -100,7 +100,7 @@ export class NomenclatureComponent implements AfterViewInit, OnDestroy {
               }));
             } else {
               this.store.dispatch(NomenclatureActions.create({
-                nomenclature: new Nomenclature(undefined, result.name, result.code)
+                nomenclature: new Nomenclature(undefined, result.name, result.code, result.shortName, result.weight)
               }));
             }
             this.search();
